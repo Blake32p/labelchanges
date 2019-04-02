@@ -13,11 +13,11 @@ layout:default
 </header>
 <section id="intro">
   <div class="grid-container">
-    <div class="grid-x">
-      <div class="small-6 small-offset-3 medium-4 cell">
-
+    <div class="grid-x grid-padding-x">
+      <div class="small-6 small-offset-3 medium-4 medium-offset-0 medium-order-2 cell">
+        <img src="/assets/img/label-changes-transition.gif" alt="">
       </div>
-      <div class="medium-8 cell">
+      <div class="medium-8 medium-order-1 cell">
         <h2>Upcoming Changes</h2>
         <p>
           The Food and Drug Administration (FDA) has changed the regulations for the nutrition and supplement facts
@@ -41,13 +41,13 @@ layout:default
       </div>
     </div>
 </section>
-<section>
-  <div class="grid-container text-colors-reversed" id="label-guide">
-    <div class="grid-x">
-      <div class="cell">
+<section id="label-guide">
+  <div class="grid-container text-colors-reversed" >
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="cell medium-6 large-4 medium-order-2">
         <img src="" alt="Nutrition Facts Label Changes Guide Cover">
       </div>
-      <div class="cell">
+      <div class="cell medium-6 large-8 medium-order-1">
         <h2>Guide to the Nutriton Facts Label Changes</h2>
         <p>
           This guide covers the 2015–2020 Dietary Guidelines for Americans that the nutrition label changes are based
@@ -59,16 +59,16 @@ layout:default
           team. If you request mailed copies of the guide we will also send you a link to download the digital version.
         </p>
       </div>
-      <div class="cell small-6 text-center">
-        <img src="#" alt="cloud download icon">
+      <div class="cell small-6 text-center medium-order-3">
+        <img src="/assets/img/download-logo.png" alt="cloud download icon">
         <p>
           Digital Version of the guide for you to view and download. Feel free to share with friends and co-workers!
         </p>
         <a href="http://info.watson-inc.com/changes-to-the-nutrition-facts-label?__hstc=114950296.9f849cc7f40486be5a17133b29741b77.1554141576836.1554141576836.1554141576836.1&__hssc=114950296.5.1554141576836&__hsfp=316961940"
           class="button outline radius hollow">View/Download Guide</a>
       </div>
-      <div class="cell small-6 text-center">
-        <img src="#" alt="Mail icon">
+      <div class="cell small-6 text-center medium-order-4">
+        <img src="/assets/img/mail-logo.png" alt="Mail icon">
         <p>
           Recieve FREE printed copies of the guide + access to the digital version.
         </p>
@@ -102,29 +102,29 @@ layout:default
 </section>
 <section class="text-colors-reversed" id="news">
   <div class="grid-container">
-    <div class="grid-x">
+    <div class="grid-x grid-margin-x grid-padding-x grid-padding-y">
       <div class="cell">
         <h2>Latest News on the Nutrition Facts Panel Changes</h2>
       </div>
       <div class="cell">
-        <div class="grid-x">
+        <div class="grid-x grid-padding-x grid-padding-y">
           <div class="cell medium-4">
-            <div class="grid-y">
-              <div class="cell">
+            <div class="grid-x grid-padding-x grid-padding-y">
+              <div class="cell small-6 medium-12">
                 <p class="title">
                   Title
                 </p>
-                <img src="#" alt="">
+                <img src="http://placehold.it/597x240" alt="">
                 <p></p>
-                <a href="" class="button radius success">Read More</a>
+                <a href="#" class="button radius success small">Read More</a>
               </div>
-              <div class="cell">
+              <div class="cell small-6 medium-12">
                 <p class="title">
                   Title
                 </p>
-                <img src="#" alt="">
+                <img src="http://placehold.it/597x240" alt="">
                 <p></p>
-                <a href="" class="button radius success">Read More</a>
+                <a href="#" class="button radius success small">Read More</a>
               </div>
             </div>
           </div>
@@ -132,25 +132,25 @@ layout:default
             <p class="title">
               Title
             </p>
-            <img src="#" alt="">
+            <img src="http://placehold.it/597x240" alt="">
             <p></p>
-            <a href="" class="button radius success">Read More</a>
-            <div class="grid-x">
-              <div class="cell medium-6">
+            <a href="" class="button radius success small">Read More</a>
+            <div class="grid-x grid-padding-x grid-padding-y">
+              <div class="cell small-6 ">
                 <p class="title">
                   Title
                 </p>
-                <img src="#" alt="">
+                <img src="http://placehold.it/597x240" alt="">
                 <p></p>
-                <a href="" class="button radius success">Read More</a>
+                <a href="" class="button radius success small">Read More</a>
               </div>
-              <div class="cell medium-6">
+              <div class="cell small-6">
                 <p class="title">
                   Title
                 </p>
-                <img src="#" alt="">
+                <img src="http://placehold.it/597x240" alt="">
                 <p></p>
-                <a href="" class="button radius success">Read More</a>
+                <a href="" class="button radius success small">Read More</a>
               </div>
             </div>
           </div>
@@ -177,17 +177,57 @@ layout:default
 <section id="social-media">
   <div class="grid-container">
     <div class="grid-x">
-      <div class="cell center-text medium-8 medium-offset-2">
+      <div class="cell center-text medium-8 medium-offset-2 text-center">
         <h2>Keep In Touch</h2>
-        <ul class="list-inline">
-          <li class="social-facebook">
-            <a href="https://www.facebook.com/YourWatson/"><i class="fab fa-facebook-f"></i></a>
+        <ul class="list-inline social-icons-group">
+          <li class="social-icons social-facebook">
+            <a href="https://www.facebook.com/YourWatson/">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg data-name="Layer 1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+              <style>.cls-1{font-size:39px;font-family:FontAwesome5Brands-Regular, "Font Awesome 5 Brands";}</style>
+              </defs>
+              <title>facebook-logo</title>
+              <text class="cls-1" transform="translate(9.95 35.22)"></text>
+              </svg>
+            </a>
           </li>
-          <li class="social-twitter">
-            <a href="https://twitter.com/watsonnews"></a>
+          <li class="social-icons social-twitter">
+            <a href="https://twitter.com/watsonnews">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg data-name="Layer 1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+              <style>.cls-1{font-size:39px;font-family:FontAwesome5Brands-Regular, "Font Awesome 5 Brands";}</style>
+              </defs>
+              <title>twitter-logo</title>
+              <text class="cls-1" transform="translate(.5 35.22)"></text>
+              </svg>
+            </a>
           </li>
-          <li class="social-instagram">
-            <a href="https://www.instagram.com/watson_inc/"></a>
+          <li class="social-icons social-instagram">
+            <a href="https://www.instagram.com/watson_inc/">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg data-name="Layer 1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+              <style>.cls-1{font-size:39px;font-family:FontAwesome5Brands-Regular, "Font Awesome 5 Brands";}</style>
+              </defs>
+              <title>instagram-logo</title>
+              <text class="cls-1" transform="translate(3 35.07)"></text>
+              </svg>
+            </a>
+          </li>
+          <li class="social-icons social-linkedin">
+            <a href="">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg data-name="Layer 1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+              <style>.cls-1{font-size:39px;font-family:FontAwesome5Brands-Regular, "Font Awesome 5 Brands";}</style>
+              </defs>
+              <title>linked-in-logo</title>
+              <text class="cls-1" transform="translate(2.94 37.22)"></text>
+              </svg>
+
+            </a>
           </li>
         </ul>
       </div>
