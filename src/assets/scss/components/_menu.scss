@@ -1,0 +1,93 @@
+.sticky-container {
+    .sticky.is-anchored {
+        .title-bar {
+            background: $white;
+
+            .title-bar-left {}
+
+            .title-bar-right {}
+        }
+
+        .top-bar {
+            background-color: $white;
+
+            @include breakpoint(medium) {
+                background-color: transparent;
+                padding-top: $global-padding;
+            }
+
+            .top-bar-left {}
+
+            .top-bar-right {
+                .menu {
+                    background-color: $white;
+
+                    @include breakpoint(medium) {
+                        background-color: transparent;
+                    }
+
+                    li {
+                        a {
+                            color: $black;
+                            text-transform: uppercase;
+                            font-size: .7rem;
+                            font-weight: 900;
+
+                            @include breakpoint(medium) {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sticky-container {
+    .sticky.is-stuck {
+        .top-bar {
+            @include breakpoint(medium) {
+                background-color: $white;
+                box-shadow: 0 3px 4px rgba($black, 0.2);
+                transition: all 0.35s;
+                transition-property: all;
+                transition-duration: 0.35s;
+                transition-timing-function: ease;
+                transition-delay: 0s;
+            }
+
+            .top-bar-left {}
+
+            .top-bar-right {
+                .menu {
+
+                    @include breakpoint(medium) {
+                        background-color: transparent;
+                        transition: all 0.35s;
+                        transition-property: all;
+                        transition-duration: 0.35s;
+                        transition-timing-function: ease;
+                        transition-delay: 0s;
+                    }
+
+                    li {
+                        a {
+                            @include breakpoint(medium) {
+                                color: $black;
+                                text-transform: uppercase;
+                                font-size: .7rem;
+                                font-weight: 900;
+                                transition: all 0.35s;
+                                transition-property: all;
+                                transition-duration: 0.35s;
+                                transition-timing-function: ease;
+                                transition-delay: 0s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

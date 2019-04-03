@@ -4,15 +4,35 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     height: 640px;
+    margin-top: -60px;
+
     @include breakpoint(medium) {
         background-image: url('/assets/img/label-changes-header-992px.jpg');
     }
-    @include breakpoint(large) {
-    }
+
+    @include breakpoint(large) {}
+
     @include breakpoint(xlarge) {
         background-image: url('/assets/img/label-changes-header-1400px.jpg');
     }
+
     @include breakpoint(xxlarge) {
         background-image: url('/assets/img/label-changes-header-1900px.jpg');
+    }
+
+    .grid-container {
+        height: 100%;
+        .grid-x {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            .cell {
+                hr {
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
     }
 }
