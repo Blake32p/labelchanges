@@ -32,6 +32,9 @@
                             text-transform: uppercase;
                             font-size: .7rem;
                             font-weight: 900;
+                            &:active {
+                                color: $success-color;
+                            }
 
                             @include breakpoint(medium) {
                                 color: $white;
@@ -72,6 +75,14 @@
                     }
 
                     li {
+                        &:active {
+                            color: $success-color;
+                            a {
+                                &:focus {
+                                    color: red;
+                                }
+                            }
+                        }
                         a {
                             @include breakpoint(medium) {
                                 color: $black;

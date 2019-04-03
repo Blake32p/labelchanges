@@ -1,29 +1,38 @@
 #social-media {
     .social-icons-group {
-    margin: $global-margin;
-    .social-icons {
-        width: 80px;
-        height: 80px;
-        border-radius: 1000px;
-        a {
-            svg {
-                width: 60px;
-                fill: $white;
-                
+        margin: $global-margin;
+
+        .social-icons {
+            width: 80px;
+            height: 80px;
+            border-radius: 1000px;
+
+            a {
+                svg {
+                    width: 60px;
+                    fill: $white;
+
+                }
             }
         }
+
+        .social-facebook {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blue;
+        }
+
+        .social-twitter {
+            background-color: blue;
+        }
+
+        .social-linkedin {
+            background-color: blue;
+        }
+
+        .social-instagram {
+            background-color: blue;
+        }
     }
-    .social-facebook {
-        background-color: blue;
-    }
-    .social-twitter {
-        background-color: blue;
-    }
-    .social-linkedin {
-        background-color: blue;
-    }
-    .social-instagram {
-        background-color: blue;
-    }
-}
 }
