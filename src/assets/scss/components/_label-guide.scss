@@ -1,4 +1,19 @@
 #label-guide {
-    background-image: -webkit-linear-gradient(top left, #388E3C, #8BC34A);
-    background-image: linear-gradient(to bottom right, #388E3C, #8BC34A);
+    // background-image: -webkit-linear-gradient(top left, #388E3C, #8BC34A);
+    // background-image: linear-gradient(to bottom right, #388E3C, #8BC34A);
+    background-color: $light-blue;
+    color: $black;
+    h1, h2,h3, h4,h5 {
+        color: $black;
+    }
+    p {
+        color: $black;
+    }
+    svg {
+        fill: $black;
+        color: $black;
+    }
+    img {
+        box-shadow: 0 4px 6px rgba($black, 0.2);
+    }
 }

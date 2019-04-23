@@ -4,7 +4,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     height: 640px;
-    margin-top: -60px;
+    margin-top: -74px;
 
     @include breakpoint(medium) {
         background-image: url('/assets/img/label-changes-header-992px.jpg');
@@ -28,9 +28,18 @@ header {
             justify-content: center;
             height: 100%;
             .cell {
+                h1 {
+                    font-size: 5rem;
+                    text-shadow: 0 4px 6px rgba($black, 0.4);
+                }
                 hr {
                     margin-top: 5px;
                     margin-bottom: 15px;
+                }
+                span {
+                    font-weight: $global-weight-bold;
+                    font-size: 1rem;
+                    text-shadow: 0 4px 6px rgba($black, 0.4);
                 }
             }
         }

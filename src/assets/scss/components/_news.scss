@@ -1,5 +1,12 @@
 #news {
-    background-image: -webkit-linear-gradient(top left, #34658F, #3D87C3);
-    background-image: linear-gradient(to bottom right, #34658F, #3D87C3);
-    background-size: cover;
+    // background-image: -webkit-linear-gradient(top left, #34658F, #3D87C3);
+    // background-image: linear-gradient(to bottom right, #34658F, #3D87C3);
+    // background-size: cover;
+    background-color: $secondary-color;
+    .title {
+        font-weight: $global-weight-bold;
+    }
+    .date {
+        font-size: .8rem;
+    }
 }

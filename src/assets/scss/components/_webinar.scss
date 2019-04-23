@@ -5,6 +5,16 @@
                 color: $white !important;
                 font-family: $header-font-family !important;
                 font-weight: $global-weight-bold !important;
+                font-size: 1rem !important;
+                @include breakpoint(medium) {
+                    font-size: 1.2rem !important;
+                }
+                @include breakpoint(large) {
+                    font-size: 1.6rem !important;
+                }
+                @include breakpoint(xlarge) {
+                    font-size: 2rem !important;
+                }
             }
             text-align: center;
             padding: 0 $global-padding;

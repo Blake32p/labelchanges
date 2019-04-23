@@ -3,9 +3,25 @@
         .title-bar {
             background: $white;
 
-            .title-bar-left {}
+            .title-bar-left {
+                svg {
+                    width: 100px;
+                    fill: $primary-color;
+                }
+            }
 
-            .title-bar-right {}
+            .title-bar-right {
+                .menu-icon {
+                    // background-color: red;
+                    &::after {
+                        background-color: red;
+                    }
+                    &::before {
+                        background-color: red;
+                    }
+                    
+                }
+            }
         }
 
         .top-bar {
@@ -16,7 +32,12 @@
                 padding-top: $global-padding;
             }
 
-            .top-bar-left {}
+            .top-bar-left {
+                svg {
+                    width: 100px;
+                    fill: $primary-color;
+                }
+            }
 
             .top-bar-right {
                 .menu {
@@ -60,7 +81,12 @@
                 transition-delay: 0s;
             }
 
-            .top-bar-left {}
+            .top-bar-left {
+                svg {
+                    width: 100px;
+                    fill: $primary-color;
+                }
+            }
 
             .top-bar-right {
                 .menu {
@@ -75,13 +101,8 @@
                     }
 
                     li {
-                        &:active {
+                        &:is-active {
                             color: $success-color;
-                            a {
-                                &:focus {
-                                    color: red;
-                                }
-                            }
                         }
                         a {
                             @include breakpoint(medium) {
